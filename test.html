@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="https://avatars1.githubusercontent.com/u/72472635?s=460&u=e881aaeb8358410a9042598c4d97d4d377fc5534&v=4">
+    <!-- nes.css latest -->
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+    <!-- local stylesheet -->
+    <link href="style.css" rel="stylesheet" />
+
+  </head>
+  <body>
+        <main class="main_content">
+            <div id="main_container" class="nes-container">
+                <table style="width:100%">
+                    <tr>
+                        <td>
+                            <div class="nes-container" style="
+                            background-image: url(https://avatars1.githubusercontent.com/u/72472635?s=460&u=e881aaeb8358410a9042598c4d97d4d377fc5534&v=4); 
+                            width: 150px; 
+                            height: 150px; 
+                            background-size: contain; 
+                            background-size: cover;" width="150" height="150">
+                                <!-- <img src="/home/kb/Pictures/Avatars/kb.png" alt width="150" height="150"> -->
+                            </div>
+                                
+                        </td>
+                        <td>
+                            <div>
+                                <section class="message-left">
+                                    <!-- Balloon -->
+                                    <div id="balloon" class="nes-balloon from-left" style="width: fit-content;">
+                                        <p>Hello World !</p>
+                                    </div>
+                                </section>
+                            </div>
+
+                            
+                        </td>
+                    </tr>
+                </table>
+                <button type="button" onclick="change_theme()" class="nes-btn is-primary">Primary</button>
+                <a onclick="change_theme()" class="nes-btn" href="#">Normal</a>
+                <!-- <label>
+                    <input id="check" onclick="change_theme()" type="checkbox" class="nes-checkbox"/>
+                    <span>Dark Mode</span>
+                </label> -->
+                  
+                <p>Good morning. Thou hast had a good night's sleep, I hope.</p>
+                <p>Good morning. Thou hast had a good night's sleep, I hope.</p>
+                <p>Good morning. Thou hast had a good night's sleep, I hope.</p>
+            </div>
+        </main>
+
+        <script>
+            //var is_dark = true;
+            function change_theme() 
+            {
+                //var e_check = document.getElementById("check");
+                var e_balloon = document.getElementById("balloon");
+
+                var es_container = document.getElementsByClassName("nes-container");
+
+                if (e_check.checked)
+                {
+                    for (e of es_container) {
+                        e.classList.add("is-dark");
+                    }
+                    //e_check.classList.add("is-dark");
+                    e_balloon.classList.add("is-dark");
+                    document.body.style.backgroundColor = "#212529";
+                }
+                else
+                {
+                    for (e of es_container) {
+                        e.classList.remove("is-dark");
+                    }
+                    //e_check.classList.remove("is-dark");
+                    e_balloon.classList.remove("is-dark");
+                    document.body.style.backgroundColor = "";
+                }
+            }
+        </script>
+  </body>
+</html>
