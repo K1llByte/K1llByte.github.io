@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Jojo</title>
+        <!-- nes.css latest -->
+        <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+        <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+        <!-- local stylesheet -->
+        <link href="style.css" rel="stylesheet" />
+        <style>
+            /* ThreeJS body fits better with this */
+			body { margin: 0; }
+		</style>
+	</head>
+	<body>
+        <div id="nescss">
+            <header :class="{ sticky: scrollPos > 50 }">
+              <div class="container">
+                <div class="nav-brand">
+                  <a>
+                    <h1>Jorge Mota</h1>
+                  </a>
+                  <p>Programmer</p>
+                </div>
+
+                <a id="bar_button" href="#" class="nes-badge">
+                    <span class="is-dark">Projects</span>
+                </a>
+                <a id="bar_button" href="#"  class="nes-badge">
+                    <span class="is-dark">About me</span>
+                </a>
+            </header>
+            
+            <div class="container">
+                <main class="main-content">
+
+                    <!--
+                    <section class="topic">
+                        <canvas id="bg"/>
+                    </section>
+                    -->
+                    
+                    <section class="topic">
+                        <div class="nes-container with-title">
+                            <p class="title">Container.is-dark</p>
+                            <div style="display: flex;">
+                                <div>
+                                    <img style="margin 30px; filter: drop-shadow(0px 0px 10px rgb(47, 47, 47))" src="https://camo.githubusercontent.com/f5265753dd313a60b82005dffcb1c9503fa819a0bd8cb226807a45b3b61eb3a2/68747470733a2f2f692e696d6775722e636f6d2f6d6954386a36742e706e67" alt="Kazan" width="400" height="250"> 
+                                </div>
+                                <div style="margin: 40px">
+                                    <p>Good morning. Thou hast had a good night's sleep, I hope.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="topic">
+                        <div class="nes-container with-title">
+                            <p class="title">Container.is-dark</p>
+                            <p>Good morning. Thou hast had a good night's sleep, I hope.</p>
+                        </div>
+                    </section>
+
+                    <section class="topic">
+                        <div class="nes-container with-title">
+                            <p class="title">Container.is-dark</p>
+                            <p>Good morning. Thou hast had a good night's sleep, I hope.</p>
+                        </div>
+                    </section>
+
+                    <script src="js/three.js"></script>
+                    <script src="js/index.js"></script>
+                </main>
+            </div>
+        </div>
+	</body>
+</html>

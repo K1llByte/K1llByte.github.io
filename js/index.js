@@ -6,16 +6,29 @@ const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.inner
 const geometry = new THREE.BoxGeometry();
 const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
 const cube = new THREE.Mesh( geometry, material );
+scene.background = null;
 scene.add( cube );
 
 camera.position.x = 2;
 camera.position.y = 2;
 camera.position.z = 5;
 
+const canvas = document.getElementById("bg");
+const renderer = new THREE.WebGLRenderer({ 
+	// alpha: true,
+	canvas: canvas
+});
+renderer.setClearColor(new THREE.Color(0x1e1e1e));
 
-const renderer = new THREE.WebGLRenderer();
-renderer.setSize( window.innerWidth, window.innerHeight );
-document.body.appendChild( renderer.domElement );
+const canvasW = canvas.getBoundingClientRect().width;
+const canvasH = canvas.getBoundingClientRect().height;
+
+renderer.setPixelRatio( window.devicePixelRatio );
+renderer.setSize( canvasW, canvasH );
+
+// renderer.setSize( window.innerWidth, window.innerHeight );
+// document.body.appendChild( renderer.domElement );
+
 
 function animate() {
 	requestAnimationFrame( animate );
