@@ -1,5 +1,12 @@
 <!DOCTYPE html>
 <html>
+    <style>
+        .bar-button {
+            background-color: rgb(255, 0, 0);
+            color: yellow;
+        }
+    </style>
+
 	<head>
 		<meta charset="utf-8">
 		<title>Jojo</title>
@@ -11,6 +18,12 @@
         <style>
             /* ThreeJS body fits better with this */
 			body { margin: 0; }
+
+            /* Custom hover effect for nes badge */
+            .badge-button span.is-dark:hover {
+                background-color: #44484e;
+                box-shadow: 0 0.5em #44484e, 0 -0.5em #44484e, 0.5em 0 #44484e, -0.5em 0 #44484e;
+            }
 		</style>
 	</head>
 	<body>
@@ -25,10 +38,10 @@
                 </div>
 
                 <div style="top: 50%;">
-                    <a id="bar_button" href="#" class="nes-badge">
+                    <a class="nes-badge badge-button" href="/">
                         <span class="is-dark">Projects</span>
                     </a>
-                    <a id="bar_button" href="#"  class="nes-badge">
+                    <a class="nes-badge badge-button" href="./about.html" >
                         <span class="is-dark">About me</span>
                     </a>
                 </div>
@@ -53,13 +66,14 @@
                                 </div>
                                 <div style="margin: 40px">
                                     <p>Good morning. Thou hast had a good night's sleep, I hope.</p>
-                                    
+
                                     <section>
-                                        <a href="https://github.com/K1llByte/kazan">
-                                            <i class="nes-icon github"></i>
-                                            <span style="font-size: large;" class="nes-text is-primary"><underline>GitHub</underline></span>
+                                        <a style="width: 12em; height: 2.8em; display: inline-flex; align-items: center" class="nes-btn" href="https://github.com/K1llByte/kazan">
+                                            <i style="padding-right: 20%" class="nes-icon github"></i>
+                                            <span style="text-align: center;"> GitHub</span>
                                         </a>
                                     </section>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -70,15 +84,16 @@
                             <p class="title">Ray Tracer</p>
                             <div style="display: flex;">
                                 <div>
-                                    <img style="filter: drop-shadow(0px 0px 10px rgb(47, 47, 47))" src="https://github.com/K1llByte/cool_rt/raw/master/images/preview1.png" alt="Kazan" width="400" height="250"> 
+                                    <img style="filter: drop-shadow(0px 0px 10px rgb(47, 47, 47))" src="https://github.com/K1llByte/cool_rt/raw/master/images/preview2.png" alt="Kazan" width="400" height="250"> 
                                 </div>
                                 <div style="margin: 40px">
                                     <p>Good morning. Thou hast had a good night's sleep, I hope.</p>
                                     
                                     <section>
-                                        <a href="https://github.com/K1llByte/cool_rt">
-                                            <i class="nes-icon github"></i>
-                                            <span style="font-size: large;" class="nes-text is-primary"><underline>GitHub</underline></span>
+                                        <a style="width: 12em; height: 2.8em; display: inline-flex; align-items: center" class="nes-btn" 
+                                            href="https://github.com/K1llByte/cool_rt">
+                                            <i style="padding-right: 20%" class="nes-icon github"></i>
+                                            <span style="text-align: center;"> GitHub</span>
                                         </a>
                                     </section>
                                 </div>
@@ -98,9 +113,10 @@
                                     <p>Good morning. Thou hast had a good night's sleep, I hope.</p>
                                     
                                     <section>
-                                        <a href="https://github.com/K1llByte/master_thesis">
-                                            <i class="nes-icon github"></i>
-                                            <span style="font-size: large;" class="nes-text is-primary"><underline>GitHub</underline></span>
+                                        <a style="width: 12em; height: 2.8em; display: inline-flex; align-items: center" class="nes-btn" 
+                                            href="https://github.com/K1llByte/master_thesis">
+                                            <i style="padding-right: 20%" class="nes-icon github"></i>
+                                            <span style="text-align: center;"> GitHub</span>
                                         </a>
                                     </section>
                                 </div>
@@ -119,9 +135,10 @@
                                     <p>Good morning. Thou hast had a good night's sleep, I hope.</p>
 
                                     <section>
-                                        <a href="https://github.com/K1llByte/cg_project">
-                                            <i class="nes-icon github"></i>
-                                            <span style="font-size: large;" class="nes-text is-primary"><underline>GitHub</underline></span>
+                                        <a style="width: 12em; height: 2.8em; display: inline-flex; align-items: center" class="nes-btn" 
+                                            href="https://github.com/K1llByte/cg_project">
+                                            <i style="padding-right: 20%" class="nes-icon github"></i>
+                                            <span style="text-align: center;"> GitHub</span>
                                         </a>
                                     </section>
                                 </div>
