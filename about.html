@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        .bar-button {
+            background-color: rgb(255, 0, 0);
+            color: yellow;
+        }
+    </style>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Jojo</title>
+        <!-- nes.css latest -->
+        <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+        <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+        <!-- local stylesheet -->
+        <link href="style.css" rel="stylesheet" />
+        <style>
+            /* ThreeJS body fits better with this */
+			body { margin: 0; }
+
+            /* Custom hover effect for nes badge */
+            .badge-button span.is-dark:hover {
+                background-color: #44484e;
+                box-shadow: 0 0.5em #44484e, 0 -0.5em #44484e, 0.5em 0 #44484e, -0.5em 0 #44484e;
+            }
+		</style>
+	</head>
+	<body>
+        <div id="nescss">
+            <header :class="{ sticky: scrollPos > 50 }">
+              <div class="container">
+                <div class="nav-brand">
+                  <a>
+                    <h1>Jorge Mota</h1>
+                  </a>
+                  <p>Programmer</p>
+                </div>
+
+                <div style="top: 50%;">
+                    <a class="nes-badge badge-button" href="index.html">
+                        <span class="is-dark">Projects</span>
+                    </a>
+                    <a class="nes-badge badge-button" href="about.html" >
+                        <span class="is-dark">About me</span>
+                    </a>
+                </div>
+
+            </header>
+            
+            <div class="container">
+                <main class="main-content">
+                    <section class="topic">
+                        <div class="nes-container">
+
+                            <p>
+                                Hi, im Jorge and i like to spend my time doing and learning stuff .
+                            </p>
+
+                            <div class="lists">
+                                <ul class="nes-list is-disc">
+                                    <li>Computer Graphics</li>
+                                    <li>High Performance Computing</li>
+                                    <li>C++/C/Rust</li>
+                                </ul>
+                            </div>
+
+                            <p>Go stalk me on my social networks:</p>
+
+                            <div style="display: inline-flex">
+                                <!-- GitHub -->
+                                <a style="margin: 10%; align-items: center" class="nes-btn" href="https://github.com/k1llbyte">
+                                    <i class="nes-icon github"></i>
+                                </a>
+                                <!-- LinkedIn -->
+                                <a style="margin: 10%; align-items: center" class="nes-btn" href="https://www.linkedin.com/in/jojomota/">
+                                    <i class="nes-icon linkedin"></i>
+                                </a>
+                            </div>
+
+                        </div>
+                    </section>
+                </main>
+            </div>
+        </div>
+	</body>
+</html>
