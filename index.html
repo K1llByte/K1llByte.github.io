@@ -95,7 +95,7 @@
                             <p class="title">Ray Tracer</p>
                             <div style="display: flex;">
                                 <div>
-                                    <img style="filter: drop-shadow(0px 0px 10px rgb(47, 47, 47))" src="https://github.com/K1llByte/cool_rt/raw/master/images/preview2.png" alt="Kazan" width="400" height="250"> 
+                                    <img style="filter: drop-shadow(0px 0px 10px rgb(47, 47, 47))" src="https://github.com/K1llByte/cool_rt/raw/master/images/preview2.png" alt="PathTracer" width="400" height="250"> 
                                 </div>
                                 <div style="margin: 40px">
                                     <p>A path tracer based on the Ray Tracing in a Weekend books.</p>
@@ -118,7 +118,7 @@
                             <p class="title">Efficient FFT</p>
                             <div style="display: flex;">
                                 <div>
-                                    <img style="filter: drop-shadow(0px 0px 10px rgb(47, 47, 47))" src="https://i.imgur.com/nMRuKkl.png" alt="Kazan" width="400" height="250"> 
+                                    <img style="filter: drop-shadow(0px 0px 10px rgb(47, 47, 47))" src="https://i.imgur.com/nMRuKkl.png" alt="FFT" width="400" height="250"> 
                                 </div>
                                 <div style="margin: 40px">
                                     <p>My Master's dissertation project for glsl compute shaders implementations of FFT.</p>
@@ -140,10 +140,10 @@
                             <p class="title">OpenGL Renderer</p>
                             <div style="display: flex;">
                                 <div>
-                                    <img style="filter: drop-shadow(0px 0px 10px rgb(47, 47, 47))" src="https://i.imgur.com/gXyBuIH.png" alt="Kazan" width="400" height="250"> 
+                                    <img style="filter: drop-shadow(0px 0px 10px rgb(47, 47, 47))" src="https://i.imgur.com/gXyBuIH.png" alt="Renderer" width="400" height="250"> 
                                 </div>
                                 <div style="margin: 40px">
-                                    <p>An OpenGL renderer for an University project</p>
+                                    <p>An OpenGL renderer for an University project.</p>
 
                                     <section>
                                         <a style="width: 12em; height: 2.8em; display: inline-flex; align-items: center" class="nes-btn" 
@@ -162,16 +162,245 @@
                             <p class="title">Terrain shaders</p>
                             <div style="display: flex;">
                                 <div>
-                                    <img style="filter: drop-shadow(0px 0px 10px rgb(47, 47, 47))" src="https://github.com/JoseFilipeFerreira/TerrainGeneration/blob/master/report/images/result.gif?raw=true" alt="Kazan" width="400" height="250"> 
+                                    <img style="filter: drop-shadow(0px 0px 10px rgb(47, 47, 47))" src="https://github.com/JoseFilipeFerreira/TerrainGeneration/blob/master/report/images/result.gif?raw=true" alt="Terrain" width="400" height="250"> 
                                 </div>
                                 <div style="margin: 40px">
-                                    <p>Shader-based terrain generation</p>
+                                    <p>Shader-based terrain generation.</p>
 
                                     <section>
                                         <a style="width: 12em; height: 2.8em; display: inline-flex; align-items: center" class="nes-btn" 
                                             href="https://github.com/JoseFilipeFerreira/TerrainGeneration">
                                             <i style="padding-right: 20%" class="nes-icon github"></i>
                                             <span style="text-align: center;"> GitHub</span>
+                                        </a>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="topic">
+                        <div class="nes-container with-title">
+                            <p class="title">2D Shader Ray-Caster</p>
+                            <div style="display: flex;">
+                                <div>
+                                    <img style="filter: drop-shadow(0px 0px 10px rgb(47, 47, 47))" src="https://i.imgur.com/J5hIX72.gif[/img" alt="RayCaster" width="400" height="250"> 
+                                </div>
+                                <div style="margin: 40px">
+                                    <p>ShaderToy 2D raycaster made as a practice exercise</p>
+<!DOCTYPE html>
+<html>
+    <style>
+        .bar-button {
+            background-color: rgb(255, 0, 0);
+            color: yellow;
+        }
+    </style>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Jojo</title>
+        <!-- nes.css latest -->
+        <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+        <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+        <!-- local stylesheet -->
+        <link href="style.css" rel="stylesheet" />
+        <style>
+            /* ThreeJS body fits better with this */
+			body { margin: 0; }
+
+            /* Custom hover effect for nes badge */
+            .badge-button span.is-dark:hover {
+                background-color: #44484e;
+                box-shadow: 0 0.5em #44484e, 0 -0.5em #44484e, 0.5em 0 #44484e, -0.5em 0 #44484e;
+            }
+		</style>
+	</head>
+	<body>
+        <div id="nescss">
+            <header :class="{ sticky: scrollPos > 50 }">
+              <div class="container">
+                <div class="nav-brand">
+                  <a>
+                    <h1>Jorge Mota</h1>
+                  </a>
+                  <p>Programmer</p>
+                </div>
+
+                <div style="top: 50%;">
+                    <a class="nes-badge badge-button" href="/">
+                        <span class="is-dark">Projects</span>
+                    </a>
+                    <a class="nes-badge badge-button" href="./about.html" >
+                        <span class="is-dark">About me</span>
+                    </a>
+                </div>
+
+            </header>
+            
+            <div class="container">
+                <main class="main-content">
+
+                    <!--
+                    <section class="topic">
+                        <canvas id="bg"/>
+                    </section>
+                    -->
+                    
+                    <section class="topic">
+                        <div class="nes-container with-title">
+                            <p class="title">Kazan Engine</p>
+                            <div style="display: flex;">
+                                <div>
+                                    <img style="filter: drop-shadow(0px 0px 10px rgb(47, 47, 47))" src="https://camo.githubusercontent.com/f5265753dd313a60b82005dffcb1c9503fa819a0bd8cb226807a45b3b61eb3a2/68747470733a2f2f692e696d6775722e636f6d2f6d6954386a36742e706e67" alt="Kazan" width="400" height="250"> 
+                                </div>
+                                <div style="margin: 40px">
+                                    <p>A vulkan rendering engine dedicated for educational purposes.</p>
+                                <!--
+                                    <p>Most work on this project is in progress but some wanted features are:</p>
+                                    <div class="lists">
+                                        <ul class="nes-list is-disc">
+                                            <li>MSAA</li>
+                                            <li>Compute shaders</li>
+                                            <li>PBR Materials</li>
+                                            <li>etc ...</li>
+                                        </ul>
+                                    </div>
+                                -->
+
+                                    <section>
+                                        <a style="width: 12em; height: 2.8em; display: inline-flex; align-items: center" class="nes-btn" href="https://github.com/K1llByte/kazan">
+                                            <i style="padding-right: 20%" class="nes-icon github"></i>
+                                            <span style="text-align: center;"> GitHub</span>
+                                        </a>
+                                    </section>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="topic">
+                        <div class="nes-container with-title">
+                            <p class="title">Ray Tracer</p>
+                            <div style="display: flex;">
+                                <div>
+                                    <img style="filter: drop-shadow(0px 0px 10px rgb(47, 47, 47))" src="https://github.com/K1llByte/cool_rt/raw/master/images/preview2.png" alt="PathTracer" width="400" height="250"> 
+                                </div>
+                                <div style="margin: 40px">
+                                    <p>A path tracer based on the Ray Tracing in a Weekend books.</p>
+                                    
+                                    <section>
+                                        <a style="width: 12em; height: 2.8em; display: inline-flex; align-items: center" class="nes-btn" 
+                                            href="https://github.com/K1llByte/cool_rt">
+                                            <i style="padding-right: 20%" class="nes-icon github"></i>
+                                            <span style="text-align: center;"> GitHub</span>
+                                        </a>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    
+                    <section class="topic">
+                        <div class="nes-container with-title">
+                            <p class="title">Efficient FFT</p>
+                            <div style="display: flex;">
+                                <div>
+                                    <img style="filter: drop-shadow(0px 0px 10px rgb(47, 47, 47))" src="https://i.imgur.com/nMRuKkl.png" alt="FFT" width="400" height="250"> 
+                                </div>
+                                <div style="margin: 40px">
+                                    <p>My Master's dissertation project for glsl compute shaders implementations of FFT.</p>
+                                    
+                                    <section>
+                                        <a style="width: 12em; height: 2.8em; display: inline-flex; align-items: center" class="nes-btn" 
+                                            href="https://github.com/K1llByte/master_thesis">
+                                            <i style="padding-right: 20%" class="nes-icon github"></i>
+                                            <span style="text-align: center;"> GitHub</span>
+                                        </a>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <section class="topic">
+                        <div class="nes-container with-title">
+                            <p class="title">OpenGL Renderer</p>
+                            <div style="display: flex;">
+                                <div>
+                                    <img style="filter: drop-shadow(0px 0px 10px rgb(47, 47, 47))" src="https://i.imgur.com/gXyBuIH.png" alt="Renderer" width="400" height="250"> 
+                                </div>
+                                <div style="margin: 40px">
+                                    <p>An OpenGL renderer for an University project.</p>
+
+                                    <section>
+                                        <a style="width: 12em; height: 2.8em; display: inline-flex; align-items: center" class="nes-btn" 
+                                            href="https://github.com/K1llByte/cg_project">
+                                            <i style="padding-right: 20%" class="nes-icon github"></i>
+                                            <span style="text-align: center;"> GitHub</span>
+                                        </a>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="topic">
+                        <div class="nes-container with-title">
+                            <p class="title">Terrain shaders</p>
+                            <div style="display: flex;">
+                                <div>
+                                    <img style="filter: drop-shadow(0px 0px 10px rgb(47, 47, 47))" src="https://github.com/JoseFilipeFerreira/TerrainGeneration/blob/master/report/images/result.gif?raw=true" alt="Terrain" width="400" height="250"> 
+                                </div>
+                                <div style="margin: 40px">
+                                    <p>Shader-based terrain generation.</p>
+
+                                    <section>
+                                        <a style="width: 12em; height: 2.8em; display: inline-flex; align-items: center" class="nes-btn" 
+                                            href="https://github.com/JoseFilipeFerreira/TerrainGeneration">
+                                            <i style="padding-right: 20%" class="nes-icon github"></i>
+                                            <span style="text-align: center;"> GitHub</span>
+                                        </a>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="topic">
+                        <div class="nes-container with-title">
+                            <p class="title">2D Shader Ray-Caster</p>
+                            <div style="display: flex;">
+                                <div>
+                                    <img style="filter: drop-shadow(0px 0px 10px rgb(47, 47, 47))" src="https://i.imgur.com/J5hIX72.gif[/img" alt="RayCaster" width="400" height="250"> 
+                                </div>
+                                <div style="margin: 40px">
+                                    <p>ShaderToy 2D raycaster made as a practice exercise</p>
+
+                                    <section>
+                                        <a style="width: 12em; height: 2.8em; display: inline-flex; align-items: center" class="nes-btn" 
+                                            href="https://github.com/JoseFilipeFerreira/TerrainGeneration">
+                                            <span style="text-align: center;">ShaderToy</span>
+                                        </a>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <script src="js/three.js"></script>
+                    <script src="js/index.js"></script>
+                </main>
+            </div>
+        </div>
+	</body>
+</html>
+                                    <section>
+                                        <a style="width: 12em; height: 2.8em; display: inline-flex; align-items: center" class="nes-btn" 
+                                            href="https://github.com/JoseFilipeFerreira/TerrainGeneration">
+                                            <span style="text-align: center;">ShaderToy</span>
                                         </a>
                                     </section>
                                 </div>
