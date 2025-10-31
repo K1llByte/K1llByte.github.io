@@ -4,10 +4,11 @@ title = 'Projects'
 
 # Mirror Path Tracer
 
-A physically based path tracer designed to render locally or using a P2P overlay network for distributed rendering written in rust.
+A physically based path tracer designed to render locally or using a P2P overlay network for distributed rendering written in rust. Also compiles to WebAssembly and runs on the browser.
 
 [Github](https://github.com/k1llByte/mirror)
 
+<!-- <img src="/images/logo.png" alt="Logo" style="max-height:100px;"> -->
 ![Mirror](https://raw.githubusercontent.com/K1llByte/mirror/refs/heads/master/images/showcase.png)
 
 -------------------------------------------------------------------------------

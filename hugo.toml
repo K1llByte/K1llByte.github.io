@@ -4,8 +4,10 @@ title = 'Jorge Mota'
 theme = "terminal"
 
 [params]
-contentTypeName = "posts"
+title = "Jorge Mota"
+# contentTypeName = "posts"
 showMenuItems = 4
+customCSS = ["css/main.css"]
 showLanguageSelector = false
 fullWidthTheme = false
 centerTheme = true
@@ -13,9 +15,8 @@ autoCover = true
 showLastUpdated = false
 readingTime = false
 Toc = false
-title = "Jorge Mota"
+favicon = "favicon.png"
 
-[languages]
 [languages.en]
 languageName = "English"
 title = "Jorge Mota"
@@ -24,6 +25,7 @@ weight = 1
 [languages.en.params.logo]
 logoText = "Jorge Mota"
 logoHomeLink = "/"
+pageRef = '/projects'
 
 ###############################################################################
 # About
@@ -34,6 +36,17 @@ identifier = "about"
 name = "About"
 url = "/about"
 weight = 1
+
+###############################################################################
+# Projects
+###############################################################################
+
+[[languages.en.menu.main]]
+identifier = "projects"
+title = "Projects"
+name = "Projects"
+url = "/projects"
+weight = 3
 
 ###############################################################################
 # Posts
@@ -51,15 +64,6 @@ Toc = true
 [cascade.target]
 path = '{/posts,/posts/**}'
 
-###############################################################################
-# Projects
-###############################################################################
-
-[[languages.en.menu.main]]
-identifier = "projects"
-name = "Projects"
-url = "/projects"
-weight = 3
 
 ###############################################################################
 # Resume
