@@ -1,0 +1,72 @@
+baseURL = '/'
+languageCode = 'en-us'
+title = 'Jorge Mota'
+theme = "terminal"
+
+[params]
+contentTypeName = "posts"
+showMenuItems = 4
+showLanguageSelector = false
+fullWidthTheme = false
+centerTheme = true
+autoCover = true
+showLastUpdated = false
+readingTime = false
+Toc = false
+title = "Jorge Mota"
+
+[languages]
+[languages.en]
+languageName = "English"
+title = "Jorge Mota"
+weight = 1
+
+[languages.en.params.logo]
+logoText = "Jorge Mota"
+logoHomeLink = "/"
+
+###############################################################################
+# About
+###############################################################################
+
+[[languages.en.menu.main]]
+identifier = "about"
+name = "About"
+url = "/about"
+weight = 1
+
+###############################################################################
+# Posts
+###############################################################################
+
+[[languages.en.menu.main]]
+identifier = "posts"
+name = "Posts"
+url = "/posts"
+weight = 2
+
+[cascade.params]
+readingTime = true
+Toc = true
+[cascade.target]
+path = '{/posts,/posts/**}'
+
+###############################################################################
+# Projects
+###############################################################################
+
+[[languages.en.menu.main]]
+identifier = "projects"
+name = "Projects"
+url = "/projects"
+weight = 3
+
+###############################################################################
+# Resume
+###############################################################################
+
+[[languages.en.menu.main]]
+identifier = "resume"
+name = "Resume"
+url = "https://gh.killbyte.dev/cv/cv.pdf"
+weight = 4

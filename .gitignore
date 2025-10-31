@@ -1,0 +1,6 @@
+# Local .old backup folder
+.old/
+# Lock files
+*.lock
+# Generated web pages (github workflow will generate this automatically in gh-pages branch)
+public/
