@@ -3,11 +3,14 @@ languageCode = 'en-us'
 title = 'Jorge Mota'
 theme = "terminal"
 
+[markup.goldmark.renderer]
+unsafe = true
+
 [params]
 title = "Jorge Mota"
 # contentTypeName = "posts"
 showMenuItems = 4
-customCSS = ["css/main.css"]
+customCSS = ["css/main.css", "css/custom.css"]
 showLanguageSelector = false
 fullWidthTheme = false
 centerTheme = true
@@ -19,7 +22,6 @@ favicon = "favicon.png"
 
 [languages.en]
 languageName = "English"
-title = "Jorge Mota"
 weight = 1
 
 [languages.en.params.logo]
@@ -60,7 +62,6 @@ weight = 2
 
 [cascade.params]
 readingTime = true
-Toc = true
 [cascade.target]
 path = '{/posts,/posts/**}'
 

@@ -1,0 +1,25 @@
+.side-by-side {
+    display: flex;
+    align-items: center;
+    gap: 0rem 2rem;
+    flex-wrap: wrap;
+}
+
+.side-by-side .text {
+    flex: 1;
+    min-width: 250px;
+}
+
+.side-by-side .image {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    justify-content: center;
+}
+
+.side-by-side img {
+    max-height: 350px;
+    width: auto;
+    /* width: 100%; */
+    object-fit: contain;
+}
