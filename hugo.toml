@@ -37,7 +37,7 @@ pageRef = '/projects'
 identifier = "about"
 name = "About"
 url = "/about"
-weight = 1
+# weight = 1
 
 ###############################################################################
 # Projects
@@ -48,7 +48,7 @@ identifier = "projects"
 title = "Projects"
 name = "Projects"
 url = "/projects"
-weight = 3
+# weight = 3
 
 ###############################################################################
 # Posts
@@ -58,7 +58,7 @@ weight = 3
 identifier = "posts"
 name = "Posts"
 url = "/posts"
-weight = 2
+# weight = 2
 
 [cascade.params]
 readingTime = true
@@ -74,4 +74,4 @@ path = '{/posts,/posts/**}'
 identifier = "resume"
 name = "Resume"
 url = "https://gh.killbyte.dev/cv/cv.pdf"
-weight = 4
+# weight = 4
