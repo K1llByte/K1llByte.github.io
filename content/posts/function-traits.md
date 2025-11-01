@@ -1,6 +1,7 @@
 +++
 title = 'Introspecting Functions at Compile Time in C++'
 date = '2025-11-01T14:04:00Z'
+tags = ["c++"]
 +++
 
 I wrote this simple `FunctionTraits` structure that allows you to inspect function types at compile time, that is, to look "inside" a function and discover what arguments it takes and what it returns.
