@@ -3,8 +3,28 @@ title = 'Projects'
 +++
 
 <!-- Font awesome icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.nerdfonts.com/assets/css/webfont.css">
 
+# GameJam
+
+<div class="side-by-side">
+    <div class="image">
+        <img src="https://img.itch.zone/aW1hZ2UvNDEzODA3OC8yNDY3Mzc5MS5naWY=/original/zGVeuy.gif" alt="Kickmas">
+    </div>
+    <div class="text">
+        <p>
+            Merry Kickmas is a fast-paced platformer keep-up game made for the ScoreSpace Game Jam #37.
+        </p>
+        <button style="width: 48%;" onclick="window.location.href='https://github.com/k1llByte/kickmas'">
+            <i class="nf nf-fa-github"style="margin-right: 8px;"></i> GitHub
+        </button>
+        <button style="width: 48%;" onclick="window.location.href='https://mimiki-cafe.itch.io/merry-kickmas'">
+            <i class="nf nf-fa-itch_io"style="margin-right: 8px;"></i> Itch.io
+        </button>
+    </div>
+</div>
+
+-------------------------------------------------------------------------------
 # Mirror Path Tracer
 
 <div class="side-by-side">
@@ -17,7 +37,7 @@ title = 'Projects'
             Also compiles to WebAssembly and runs in the browser.
         </p>
         <button style="width: 100%;" onclick="window.location.href='https://github.com/k1llByte/mirror'">
-            <i class="fa fa-github"style="margin-right: 8px;"></i> GitHub
+            <i class="nf nf-fa-github"style="margin-right: 8px;"></i> GitHub
         </button>
     </div>
 </div>
@@ -34,7 +54,7 @@ title = 'Projects'
       A vulkan rendering engine.
     </p>
     <button style="width: 100%;" onclick="window.location.href='https://github.com/k1llByte/kazan'">
-        <i class="fa fa-github"style="margin-right: 8px;"></i> GitHub
+        <i class="nf nf-fa-github"style="margin-right: 8px;"></i> GitHub
     </button>
   </div>
 </div>
@@ -51,7 +71,7 @@ title = 'Projects'
       Master thesis on GPU performance focused Fast Fourier Transforms.
     </p>
     <button style="width: 100%;" onclick="window.location.href='https://github.com/k1llByte/master_thesis'">
-        <i class="fa fa-github"style="margin-right: 8px;"></i> GitHub
+        <i class="nf nf-fa-github"style="margin-right: 8px;"></i> GitHub
     </button>
   </div>
 </div>
@@ -68,7 +88,7 @@ title = 'Projects'
       An OpenGL renderer for an University project.
     </p>
     <button style="width: 100%;" onclick="window.location.href='https://github.com/k1llByte/cg_project'">
-        <i class="fa fa-github"style="margin-right: 8px;"></i> GitHub
+        <i class="nf nf-fa-github"style="margin-right: 8px;"></i> GitHub
     </button>
   </div>
 </div>
@@ -85,7 +105,7 @@ title = 'Projects'
       Shader-based terrain generation.
     </p>
     <button style="width: 100%;" onclick="window.location.href='https://github.com/JoseFilipeFerreira/TerrainGeneration'">
-        <i class="fa fa-github"style="margin-right: 8px;"></i> GitHub
+        <i class="nf nf-fa-github"style="margin-right: 8px;"></i> GitHub
     </button>
   </div>
 </div>
